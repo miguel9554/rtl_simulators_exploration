@@ -1,3 +1,10 @@
+# Ignore work
 work/**
+
+# Keep iverilog
 !work/iverilog/
 !work/iverilog/Makefile
+
+# Keep verilator
+!work/verilator/
+!work/verilator/Makefile
