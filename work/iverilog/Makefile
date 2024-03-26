@@ -1,4 +1,4 @@
-.PHONY: simulate
+.PHONY: simulate clean
 
 # Waveform database name
 WAVES = waves.vcd
@@ -28,3 +28,6 @@ $(WAVES): $(OUT)
 	vvp $(OUT) +WAVES=$(WAVES)
 
 simulate: $(WAVES)
+
+clean:
+	rm -rf $(WAVES) $(OUT)
